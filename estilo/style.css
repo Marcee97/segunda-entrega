@@ -1,0 +1,488 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:rgba(0, 0,0, 0.980);
+}
+
+.header{
+    display: flex;
+    width: 100%;
+}
+
+.header__nav{
+    display: flex;
+    background: rgba(0, 0,0, 0.700);
+    width: 100%;
+    padding: 10px;
+    height: 25vh;
+    flex-wrap: wrap;
+}
+
+@media(max-width:1024px){
+    .header__nav{
+        justify-content: center;
+        height:12vh ;
+        
+    }
+}
+
+
+
+
+.header__ul{
+    display: flex;
+    list-style: none;
+}
+
+.header__ul a{
+    text-decoration: none;
+    font-weight:500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #c5c4c4;
+    padding: 9px;
+}
+
+@media(max-width:1024px){
+    .header__ul a{
+        font-size: 19px;
+        
+    }
+}
+
+.header__ul a:hover{
+    color: #ffffff;
+}
+
+.header__redes{
+    display: flex;
+    list-style: none;
+}
+
+.header__redes li a{
+    color: #c5c4c4;
+    margin: 9px;
+    font-size: 22px;
+}
+
+@media(max-width:1024px){
+    .header__redes li a{
+       font-size: 19px;
+    }
+}
+
+.header__redes li a:hover{
+    color: #fff;
+}
+
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 190px;
+    width: 23%;
+    object-fit: cover;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family:monospace;
+}
+
+@media(max-width:1024px){
+    .header__logo{
+        display: none;
+    }
+}
+
+.header__logo img{
+    width: 180px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+.main__contenedor{
+    display: flex;
+}
+
+.main__encabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 75vh;
+    padding: 9px;
+    background: rgba(0, 0,0, 0.980);
+    object-fit: cover;
+    overflow: hidden;
+    color: #fff;
+}
+
+@media (max-width:1024px){
+    .main__encabezado{
+        justify-content: start;
+    }
+}
+
+
+
+
+.main__portada{
+    width: 100%;
+    margin: 5px;
+    font-weight: 200;
+}
+
+.main__encabezado p{
+    position: absolute;
+    color: #000;
+    bottom: 0px;
+    background-color: #fff;
+    width: 45%;
+    padding: 9px;
+}
+
+@media (max-width:1024px){
+    .main__encabezado p{
+        bottom: 70px;
+    }
+}
+
+.main__encabezado span{
+    font-weight: bold;
+    font-size: 19px;
+    padding: 5px;
+}
+
+.proximos-eventos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 30%;
+    height: 67vh;
+    background: rgba(0, 0,0, 0.980);
+    color: #fff;
+}
+
+
+
+
+.proximos-eventos__titulo h2{
+    margin-bottom: 15px;
+}
+
+.proximos-eventos__info{
+    display: flex;
+}
+
+.proximos-eventos hr{
+    margin: 8px;
+    color: violet;
+}
+
+.proximos-eventos__info img{
+    width: 84px;
+    height: 85px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.proximos-eventos__ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    color: #fff;
+    list-style: none;
+}
+
+.proximos-eventos__li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.proximos-eventos__li--tamaño{
+    font-size: 12px;
+    color: #b1b3b0;
+}
+
+.footer{
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    height: 23vh;
+    padding: 9px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+@media(max-width:550px){
+    .footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+.footer__logo{
+    width: 80px;
+}
+
+@media(min-width:550px){
+    .footer__logo{
+        display: none;
+    }
+}
+
+
+
+.footer__titulo{
+    text-align: center;
+}
+
+.footer__titulo--margin{
+    margin-bottom: 29px;
+}
+
+@media(max-width:550px){
+    .footer__titulo--margin{
+        display: none;
+    }
+}
+
+.footer__ul{
+    display: flex;
+    gap: 10px;
+    }
+
+@media(max-width:550px){
+    .footer__ul li a{
+    width: 100%;
+    font-size: 19px;
+    }
+}
+
+    
+.footer__tienda{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+@media(max-width:550px){
+    .footer__tienda{
+        font-size: 14px;
+        
+    }
+}
+
+.footer__ayuda{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width:550px){
+    .footer__ayuda{
+        display: none;
+    }
+}
+
+.footer__a{
+    text-align: center;
+    color:#b1b3b0 ;
+    text-decoration: none;
+}
+
+.footer__li{
+    list-style: none;
+    color: #b1b3b0;
+
+}
+
+
+
+  
+/*------HTML TICKETS-------*/
+
+.body__tickets{
+   background: url(../image/fondotickets.jpg);
+
+}
+
+.background--color{
+    background:rgba(0, 0,0, 0.900);
+   
+}
+
+.col--tamaño{
+    width: 330px;
+}
+
+
+
+.col--tamaño a{
+   text-decoration: none;
+    color: #b1b3b0;
+}
+
+.col--tamaño a:hover{
+    color: #fff;
+}
+
+.hr-tickets{
+    color: #535f4c;
+    
+    width: 100%;
+    padding: 3px;
+}
+
+/*------HTML GRILLA-------*/
+
+.contenedor-main-grilla{
+    font-size: 28px;
+    color: #535f4c;
+    background:rgba(0, 0,0, 0.980);
+}
+.section-grilla{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+.img-bizarrap{
+    width: 800px;
+    margin: 9px;
+}
+.div-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    width: 40%;
+    height: 55vh;
+}
+.titulo-brasilfest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 9px;
+    background-image:url(https://images.pexels.com/photos/1804177/pexels-photo-1804177.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.titulo-brasilfest p{
+    font-size: 21px;
+    background:rgba(0, 0,0, 0.9);
+    padding: 3px;
+}
+.titulo-brasilfest h2{
+    font-size: 7rem;
+    text-shadow: 1px 4px 5px #000 ;
+}
+
+.section-2{
+    background:rgba(0, 0,0, 0.9);
+    display: flex;
+    margin-top: 65px;
+}
+.img-artistas{
+    width: 400px;
+    margin: 9px;
+    height: 400px;
+    object-fit: cover;
+}
+.div-artistas{
+    display: flex;
+}
+.texto-otros-artistas{
+    text-align: center;
+    margin: 9px;
+    text-align: justify;
+    padding: 9px;
+}
+
+/*------HTML TIENDA-------*/
+.remeras-container{
+    margin: 9px;
+}
+
+.remeras-container h2{
+    text-align: center;
+    font-size: 2.3rem;
+    color: #fff;
+   
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*----GALERIA----*/
+
+.galeria-imagenes{
+    display: grid;
+    grid-template-columns: repeat(3,460px);
+    grid-template-rows: repeat(4,460px);
+    gap: 15px;
+    width: 100%;
+}
+
+.galeria-imagenes div{
+    width: 100%;
+}
+
+.galeria-imagenes div img{
+    width: 100%;
+}
+
+.section-imagenes{
+    margin: 7px;
+}
+.contenedor-imagenes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,auto);
+    gap: 9px;
+}
+
+.contenedor-imagenes div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.gallery__items:nth-child(1){
+    grid-column:1/5 ;
+}
+
+.gallery__items:nth-child(6){
+    grid-column: 1/4;
+}
+
+.gallery__items:nth-child(17){
+    grid-column: 2/4;
+}
+
+
+
+
+
+
+
+    
